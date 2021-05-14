@@ -82,10 +82,10 @@ public class OrdenacaoNumeros {
 			
 			if (C > A && C > B) {
 				if (A > C) {
-					System.out.println("A ordem decrescente dos números é: " + C + " - " + A + " - " + B);
+					System.out.println("A ordem decrescente dos números é: " + C + " - " + B + " - " + A);
 				}
 				else {
-					System.out.println("A ordem decrescente dos números é: " + C + " - " + B + " - " + A);
+					System.out.println("A ordem decrescente dos números é: " + C + " - " + A + " - " + B);
 				}
 			}
 		}
