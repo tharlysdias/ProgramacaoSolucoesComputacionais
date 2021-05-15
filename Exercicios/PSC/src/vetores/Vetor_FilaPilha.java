@@ -35,12 +35,14 @@ public class Vetor_FilaPilha {
 				System.out.print("Informe a descrição do " + (i+1) + "º atendimento: ");
 				descricao[i] = inputText();
 			} else if (opcao == 2) {
-				System.out.println("Informe o nome de qual será o paciente atendido?");
+				System.out.print("Informe o nome de qual será o paciente atendido? ");
 				nomeEscolhido = inputText();
 				for (int j = 0; j < descricao.length; j++) {
-					if (nomeEscolhido.equalsIgnoreCase(nome[j])) {
+					if (nomeEscolhido.equalsIgnoreCase(nome[i])) {
+						nome[i] = null;
 						i -= 1;
 					}
+					System.out.println("Fila: " + nome[j].toString());
 				}
 			} else if (opcao == 3) {
 				System.out.println("Você saiu do sistema!");
@@ -49,6 +51,10 @@ public class Vetor_FilaPilha {
 				System.out.println("\nOpção inválida... Tente novamente!");
 				menu();
 				opcao = teclado.nextInt();
+			}
+			
+			if (nome.length < 20) {
+				break;
 			}
 		}
 		teclado.close();
