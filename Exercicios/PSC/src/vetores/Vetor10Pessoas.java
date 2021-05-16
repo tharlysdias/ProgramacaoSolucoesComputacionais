@@ -3,7 +3,7 @@ package vetores;
 import java.util.Scanner;
 
 /**
- * 2 – Faça um algoritmo que receba o nome de 10 pessoas e 
+ * 2. Faça um algoritmo que receba o nome de 10 pessoas e 
  * imprima o nome das 10 pessoas em ordem inversa a que foi lida.
  * 
  * @author Tharlys de Souza Dias <tharlys.dias@senior.com.br>
