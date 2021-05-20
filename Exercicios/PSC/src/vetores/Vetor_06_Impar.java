@@ -2,7 +2,7 @@ package vetores;
 
 import java.util.Scanner;
 
-public class VetorImpar {
+public class Vetor_06_Impar {
 
 	public static void main(String[] args) {
 

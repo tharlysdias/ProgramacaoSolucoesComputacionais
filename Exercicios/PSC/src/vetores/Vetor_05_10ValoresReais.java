@@ -2,7 +2,7 @@ package vetores;
 
 import java.util.Scanner;
 
-public class Vetor_10ValoresReais {
+public class Vetor_05_10ValoresReais {
 
 	public static void main(String[] args) {
 		

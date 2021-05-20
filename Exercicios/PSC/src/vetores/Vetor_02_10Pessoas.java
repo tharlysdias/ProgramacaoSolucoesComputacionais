@@ -9,7 +9,7 @@ import java.util.Scanner;
  * @author Tharlys de Souza Dias <tharlys.dias@senior.com.br>
  *
  */
-public class Vetor10Pessoas {
+public class Vetor_02_10Pessoas {
 	public static void main(String[] args) {
 		
 		Scanner teclado = new Scanner(System.in);

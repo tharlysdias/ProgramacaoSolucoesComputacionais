@@ -2,7 +2,7 @@ package vetores;
 
 import java.util.Scanner;
 
-public class Vetor_MediaAluno {
+public class Vetor_03_MediaAluno {
 
 	public static void main(String[] args) {
 		

@@ -9,7 +9,7 @@ import java.util.Scanner;
  * @author Tharlys de Souza Dias <tharlys.dias@senior.com.br>
  *
  */
-public class Vetor5Numeros {
+public class Vetor_01_5Numeros {
 	public static void main(String[] args) {
 		
 		// Entrada de dados

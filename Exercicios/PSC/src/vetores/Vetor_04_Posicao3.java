@@ -2,7 +2,7 @@ package vetores;
 
 import java.util.Scanner;
 
-public class Vetor_Posicao3 {
+public class Vetor_04_Posicao3 {
 
 	public static void main(String[] args) {
 

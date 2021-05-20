@@ -2,7 +2,7 @@ package vetores;
 
 import java.util.Scanner;
 
-public class Vetor_10AlunosIMC {
+public class Vetor_07_10AlunosIMC {
 
 	public static void main(String[] args) {
 		/**
@@ -25,57 +25,60 @@ public class Vetor_10AlunosIMC {
 		Integer idades[] = new Integer[quantidadeAlunos];
 		Double pesos[] = new Double[quantidadeAlunos];
 		Double alturas[] = new Double[quantidadeAlunos];
+		
 		String alunoBaixo = null, alunoAlto = null, alunoMenorPeso = null, alunoMaiorPeso = null;
-		int alunoBaixo1 = 0, alunoAlto1 = 0, alunoMenorPeso1 = 0, alunoMaiorPeso1 = 0;
 		int quantidadeMagreza = 0, quantidadeNormal = 0, quantidadeSobrepeso = 0, quantidadeObesidade = 0, quantidadeObesidadeGrave = 0;
 		Double imc;
 		
 		// Entrada de dados
 		for (int i = 0; i < nomes.length; i++) {
-			System.out.println((i+1) + "º Nome: ");
+			System.out.print((i+1) + "º Nome: ");
 			nomes[i] = inputText();
-			System.out.println((i+1) + "ª Idade: ");
+			System.out.print((i+1) + "ª Idade: ");
 			idades[i] = teclado.nextInt();
-			System.out.println((i+1) + "º Peso: ");
+			System.out.print((i+1) + "º Peso: ");
 			pesos[i] = teclado.nextDouble();
-			System.out.println((i+1) + "ª Altura: ");
+			System.out.print((i+1) + "ª Altura: ");
 			alturas[i] = teclado.nextDouble();
 		}
 		
+		Double alunoBaixo1 = alturas[0], alunoAlto1 = alturas[0], alunoMenorPeso1 = pesos[0], alunoMaiorPeso1 = pesos[0];
+		
 		// Processamento
 		for (int i = 0; i < nomes.length; i++) {
-			if (alunoBaixo1 >= alturas[i]) {
+			if (alturas[i] <= alunoBaixo1) {
 				alunoBaixo = nomes[i];
 			}
-			if (alunoAlto1 <= alturas[i]) {
+			if (alturas[i] >= alunoAlto1) {
 				alunoAlto = nomes[i];
 			}
-			if (alunoMenorPeso1 >= pesos[i]) {
+			if (pesos[i] <= alunoMenorPeso1) {
 				alunoMenorPeso = nomes[i];
 			}
-			if (alunoMenorPeso1 <= pesos[i]) {
+			if (pesos[i] >= alunoMaiorPeso1) {
 				alunoMaiorPeso = nomes[i];
 			}
-			if ((pesos[i])/(alturas[i]*alturas[i]) <= 18.5) {
+			
+			imc = (pesos[i])/(alturas[i]*alturas[i]);
+
+			if (imc < 18.5) {
 				quantidadeMagreza++;
+			} else if (imc >= 18.5 && imc <= 24.9) {
+				quantidadeNormal++;
+			} else if (imc >= 25.0 && imc <= 29.9) {
+				quantidadeSobrepeso++;
+			} else if (imc >= 30.0 && imc <= 39.9) {
+				quantidadeObesidade++;
+			} else if (imc >= 40.0) {
+				quantidadeObesidadeGrave++;
 			}
-			if ((pesos[i])/(alturas[i]*alturas[i]) == 18.5) {
-				quantidadeMagreza++;
-			}
-			if ((pesos[i])/(alturas[i]*alturas[i]) == 18.5) {
-				quantidadeMagreza++;
-			}
-			if ((pesos[i])/(alturas[i]*alturas[i]) == 18.5) {
-				quantidadeMagreza++;
-			}
-			imc=(pesos[i])/(alturas[i]*alturas[i]);
 		}
 		
 		// Saída
 		System.out.println("\nAluno mais baixo: " + alunoBaixo);
 		System.out.println("Aluno mais alto: " + alunoAlto);
-		System.out.println("Aluno com maior peso: " + alunoMenorPeso);
-		System.out.println("Aluno com menor peso: " + alunoMaiorPeso);
+		System.out.println("Aluno com menor peso: " + alunoMenorPeso);
+		System.out.println("Aluno com maior peso: " + alunoMaiorPeso);
 		System.out.println("IMC - Magreza: " + quantidadeMagreza);
 		System.out.println("IMC - Normal: " + quantidadeNormal);
 		System.out.println("IMC - Sobrepeso: " + quantidadeSobrepeso);
