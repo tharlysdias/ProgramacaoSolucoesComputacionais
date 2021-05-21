@@ -17,7 +17,12 @@ public class Funcionario {
 
 		System.out.println("Bem-vindo ao sistema de departamento pessoal\n");
 		
-		System.out.print("Digite o código correspondente ao cargo do funcionário: ");
+		System.out.print("Digite o código correspondente ao cargo do funcionário: \n"
+				+ "1 - Escriturário\n"
+				+ "2 - Secretário\n"
+				+ "3 - Caixa\n"
+				+ "4 - Gerente\n"
+				+ "5 - Diretor\n");
 		codigo = teclado.nextInt();
 		
 		System.out.print("Digite o salário atual do funcionário: ");
@@ -61,7 +66,6 @@ public class Funcionario {
 				break;
 			default:
 				System.out.println("Você informou um código inválido!");
-				break;
 		}
 		
 		teclado.close();
