@@ -4,19 +4,34 @@ import java.util.Date;
 
 public class Carro {
 
-	private String marcaVeiculo;
-	private String modeloVeiculo;
-	private Date dataFabricacaoVeiculo;
-	private double pesoVeiculo;
-	private int quantidadeMarchaVeiculo;
-	private int quantidadePortaVeiculo;
+	private Long id;
+	private String marca;
+	private double motor;
+	private String modelo;
+	private Date dataFabricacao;
+	private double peso;
+	private int quantidadeMarcha;
+	private int quantidadePorta;
+	private String placa;
+	private String cor;
+	private boolean isLigado = false;
 
 	public void ligar() {
-		System.out.println("Ligar o carro!  ->  " + this.toString());
+		if (this.isLigado == false) {
+			this.isLigado = true;
+			System.out.println("Ligar o carro!  ->  " + this.toString());			
+		} else {
+			System.out.println("O carro já está ligado!");
+		}
 	}
 
 	public void desligar() {
-		System.out.println("Desligar o carro");
+		if (this.isLigado == true) {
+			this.isLigado = false;
+			System.out.println("Desligar o carro!");
+		} else {
+			System.out.println("O carro já está desligado!");
+		}
 	}
 
 	public void acelerar() {
@@ -26,53 +41,101 @@ public class Carro {
 	public String freiar() {
 		return "Freiar o carro";
 	}
-
-	public String getMarcaVeiculo() {
-		return marcaVeiculo;
+	
+	public void abastecer() {
+		if (this.isLigado == true) {
+			System.out.println("Abastecer o carro!");			
+		} else {
+			System.out.println("Desligue o carro para abastecer!");
+		}
 	}
 
-	public void setMarcaVeiculo(String marcaVeiculo) {
-		this.marcaVeiculo = marcaVeiculo;
+	public Long getId() {
+		return id;
 	}
 
-	public String getModeloVeiculo() {
-		return modeloVeiculo;
+	public void setId(Long id) {
+		this.id = id;
 	}
 
-	public void setModeloVeiculo(String modeloVeiculo) {
-		this.modeloVeiculo = modeloVeiculo;
+	public String getMarca() {
+		return marca;
 	}
 
-	public Date getDataFabricacaoVeiculo() {
-		return dataFabricacaoVeiculo;
+	public void setMarca(String marca) {
+		this.marca = marca;
 	}
 
-	public void setDataFabricacaoVeiculo(Date dataFabricacaoVeiculo) {
-		this.dataFabricacaoVeiculo = dataFabricacaoVeiculo;
+	public double getMotor() {
+		return motor;
 	}
 
-	public double getPesoVeiculo() {
-		return pesoVeiculo;
+	public void setMotor(double motor) {
+		this.motor = motor;
 	}
 
-	public void setPesoVeiculo(double pesoVeiculo) {
-		this.pesoVeiculo = pesoVeiculo;
+	public String getModelo() {
+		return modelo;
 	}
 
-	public int getQuantidadeMarchaVeiculo() {
-		return quantidadeMarchaVeiculo;
+	public void setModelo(String modelo) {
+		this.modelo = modelo;
 	}
 
-	public void setQuantidadeMarchaVeiculo(int quantidadeMarchaVeiculo) {
-		this.quantidadeMarchaVeiculo = quantidadeMarchaVeiculo;
+	public Date getDataFabricacao() {
+		return dataFabricacao;
 	}
 
-	public int getQuantidadePortaVeiculo() {
-		return quantidadePortaVeiculo;
+	public void setDataFabricacao(Date dataFabricacao) {
+		this.dataFabricacao = dataFabricacao;
 	}
 
-	public void setQuantidadePortaVeiculo(int quantidadePortaVeiculo) {
-		this.quantidadePortaVeiculo = quantidadePortaVeiculo;
+	public double getPeso() {
+		return peso;
+	}
+
+	public void setPeso(double peso) {
+		this.peso = peso;
+	}
+
+	public int getQuantidadeMarcha() {
+		return quantidadeMarcha;
+	}
+
+	public void setQuantidadeMarcha(int quantidadeMarcha) {
+		this.quantidadeMarcha = quantidadeMarcha;
+	}
+
+	public int getQuantidadePorta() {
+		return quantidadePorta;
+	}
+
+	public void setQuantidadePorta(int quantidadePorta) {
+		this.quantidadePorta = quantidadePorta;
+	}
+
+	public String getPlaca() {
+		return placa;
+	}
+
+	public void setPlaca(String placa) {
+		this.placa = placa;
+	}
+
+	public String getCor() {
+		return cor;
+	}
+
+	public void setCor(String cor) {
+		this.cor = cor;
+	}
+
+	public boolean isLigado() {
+		return isLigado;
+	}
+
+	public void setLigado(boolean isLigado) {
+		this.isLigado = isLigado;
 	}
 
 }
