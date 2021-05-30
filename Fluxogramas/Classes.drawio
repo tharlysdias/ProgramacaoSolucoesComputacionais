@@ -1,0 +1,70 @@
+<mxfile host="app.diagrams.net" modified="2021-05-29T14:32:24.302Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36" etag="uvZVESYjtmDYgiMzA8-s" version="14.7.2" type="github">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="1342" dy="592" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="3ONuWBcEYFsh167uC3L0-0" value="Pessoa" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="150" y="10" width="160" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="3ONuWBcEYFsh167uC3L0-1" value="- id: Long&#xa;- nome: String&#xa;- sobreNome: String&#xa;- cpf: String&#xa;- telefone: String&#xa;- email: String&#xa;- endereco: String&#xa;- dataNascimento: String&#xa;- sexo: char&#xa;- peso: double" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="3ONuWBcEYFsh167uC3L0-0" vertex="1">
+          <mxGeometry y="26" width="160" height="154" as="geometry" />
+        </mxCell>
+        <mxCell id="3ONuWBcEYFsh167uC3L0-2" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="3ONuWBcEYFsh167uC3L0-0" vertex="1">
+          <mxGeometry y="180" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="3ONuWBcEYFsh167uC3L0-3" value="+ andar(): void&#xa;+ dormir(): void&#xa;+ comer(): void&#xa;+ respirar(): void&#xa;+ pagarImposto(): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="3ONuWBcEYFsh167uC3L0-0" vertex="1">
+          <mxGeometry y="188" width="160" height="92" as="geometry" />
+        </mxCell>
+        <mxCell id="3ONuWBcEYFsh167uC3L0-20" value="Conta" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="340" y="10" width="200" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="3ONuWBcEYFsh167uC3L0-21" value="- numero: int&#xa;- digito: int&#xa;- saldo: double&#xa;- limite: double&#xa;- cliente: String&#xa;- agencia: int&#xa;- banco: int&#xa;- tipo: String&#xa;- cheque: boolean&#xa;- dataAbertura: Date" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="3ONuWBcEYFsh167uC3L0-20" vertex="1">
+          <mxGeometry y="26" width="200" height="154" as="geometry" />
+        </mxCell>
+        <mxCell id="3ONuWBcEYFsh167uC3L0-22" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="3ONuWBcEYFsh167uC3L0-20" vertex="1">
+          <mxGeometry y="180" width="200" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="3ONuWBcEYFsh167uC3L0-23" value="+ sacar(double valor): void&#xa;+ depositar(double valor): void&#xa;+ transferir(double valor): boolean&#xa;+ consultarSaldo(): double&#xa;+ pagarBoleto(double valor): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="3ONuWBcEYFsh167uC3L0-20" vertex="1">
+          <mxGeometry y="188" width="200" height="92" as="geometry" />
+        </mxCell>
+        <mxCell id="3ONuWBcEYFsh167uC3L0-24" value="Carro" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="560" y="10" width="160" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="3ONuWBcEYFsh167uC3L0-25" value="- id: Long&#xa;- marca: String&#xa;- motor: double&#xa;- modelo: String&#xa;- dataFabricacao: Date&#xa;- peso: double&#xa;- quantidadeMarcha: int&#xa;- quantidadePorta: int&#xa;- placa: String&#xa;- cor: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="3ONuWBcEYFsh167uC3L0-24" vertex="1">
+          <mxGeometry y="26" width="160" height="154" as="geometry" />
+        </mxCell>
+        <mxCell id="3ONuWBcEYFsh167uC3L0-26" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="3ONuWBcEYFsh167uC3L0-24" vertex="1">
+          <mxGeometry y="180" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="3ONuWBcEYFsh167uC3L0-27" value="+ ligar(): void&#xa;+ desligar(): void&#xa;+ acelerar(): void&#xa;+ freiar(): void&#xa;+ abastecer(): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="3ONuWBcEYFsh167uC3L0-24" vertex="1">
+          <mxGeometry y="188" width="160" height="92" as="geometry" />
+        </mxCell>
+        <mxCell id="3ONuWBcEYFsh167uC3L0-28" value="Animal" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="254" y="330" width="160" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="3ONuWBcEYFsh167uC3L0-29" value="- id: Long&#xa;- nome: String&#xa;- sobreNome: String&#xa;- dataNascimento: String&#xa;- sexo: char&#xa;- peso: double&#xa;- carnivoro: boolean&#xa;- especie: String&#xa;- raca: String&#xa;- qtdePatas: int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="3ONuWBcEYFsh167uC3L0-28" vertex="1">
+          <mxGeometry y="26" width="160" height="154" as="geometry" />
+        </mxCell>
+        <mxCell id="3ONuWBcEYFsh167uC3L0-30" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="3ONuWBcEYFsh167uC3L0-28" vertex="1">
+          <mxGeometry y="180" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="3ONuWBcEYFsh167uC3L0-31" value="+ andar(): void&#xa;+ dormir(): void&#xa;+ comer(): void&#xa;+ respirar(): void&#xa;+ brincar(): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="3ONuWBcEYFsh167uC3L0-28" vertex="1">
+          <mxGeometry y="188" width="160" height="92" as="geometry" />
+        </mxCell>
+        <mxCell id="3ONuWBcEYFsh167uC3L0-32" value="Produto" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="460" y="330" width="160" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="3ONuWBcEYFsh167uC3L0-33" value="- codigo: int&#xa;- nome: String&#xa;- data: Date&#xa;- quantidade: int&#xa;- cor: char&#xa;- tamanho: double&#xa;- vencimento: Date&#xa;- qtdeMinima: int&#xa;- qtdeMaxima: int&#xa;- qtdeSeguranca: int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="3ONuWBcEYFsh167uC3L0-32" vertex="1">
+          <mxGeometry y="26" width="160" height="154" as="geometry" />
+        </mxCell>
+        <mxCell id="3ONuWBcEYFsh167uC3L0-34" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="3ONuWBcEYFsh167uC3L0-32" vertex="1">
+          <mxGeometry y="180" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="3ONuWBcEYFsh167uC3L0-35" value="+ gravar(): void&#xa;+ excluir(): void&#xa;+ alterar(): void&#xa;+ entrar(): void&#xa;+ saldo(): double" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="3ONuWBcEYFsh167uC3L0-32" vertex="1">
+          <mxGeometry y="188" width="160" height="92" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
